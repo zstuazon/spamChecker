@@ -1,0 +1,71 @@
+/*
+ * Filename: README
+ * Author: Z. Tuazon
+ * Userid: cs30s121bm
+ * 08/19/21
+ * Sources of help: 
+ */
+
+Description
+-----------
+	The spam checker program identifies whether email is span or not. The email data is populated into a hash table, where the user can interact with program to check if an email is spam or not. 
+
+
+How to compile
+--------------
+	To compile this program, use command <cd pa1> (note: excluding the left/right arrows) to navigate to the directory where all the source files are stored. There is a Makefile in the PA1, so you can simply type "make" into the terminal, and press enter. To make an executable from a given c file, simple tpye "make <name_of_file>" and press enter. The makefile will generate an executable.
+
+
+How to run
+----------
+To run the program, type the executable name and any arguments that go after the executable. The generic executable provided: ./a.out. Simple type ./a.out into the terminal, along with any arguments that should go after the exectuable.
+
+
+Normal output
+-------------
+cs30s121bm@pi-cluster-001:pa1$ ./spamFilter -i ~/../public/emails/emails_10
+Enter a word: jazz@hack.co
+jazz@hack.co is SPAM!
+Enter a word: paul@gmail.com
+paul@gmail.com is not SPAM!
+
+
+Abnormal output
+---------------
+cs30s121bm@pi-cluster-001:pa1$ ./spamFilter
+Incorrect number of args.
+
+Usage: ./spamFilter {-i dataFile | -h}
+
+
+Testing
+-------
+The testhash.c program tested whether the correct hashvalue was printed. Some tests include
+	- All letters, all numbers, combination of letters and numbers, spaces, empty string
+
+
+Questions
+---------
+
+Vim Questions
+-------------
+How would you find and replace all occurences of DEFUL_SIZE in your file to be DEFAULT_SIZE?
+First, enable Spell Check feature in Vim, by typing :set spell. In insert mode, Vim will highlight an mispelled words. Search for misspelled words, then type z= to get alist of suggestions. Hit the enter key and Vim will automatically correct the mistake. Continue this procedure to fix all misspelled words.
+
+Git Questions
+-------------
+2. What Git command(s) would you use to list files with changes since the last commit?
+	git diff
+	git status or git status --short 
+	git log
+
+3. What git command would you use to undo a bad commit that has already been pushed?
+	git revert <commit hash>
+
+4. What Git command would you use to see the history of all your comments?
+	git log
+
+Academic Integrity Question
+---------------------------
+5. What do you do to act with integrity?
+	Talk with my friend in psedocode and refer him to resources.
