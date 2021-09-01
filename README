@@ -1,20 +1,15 @@
-/*
  * Filename: README
  * Author: Z. Tuazon
- * Userid: cs30s121bm
- * 08/19/21
- * Sources of help: 
- */
+ 
 
 Description
 -----------
-	The spam checker program identifies whether email is span or not. The email data is populated into a hash table, where the user can interact with program to check if an email is spam or not. 
+	The spam checker program identifies whether a file containing emails are span or not spam. The program reads in a file, and the user interacts with the program. It prompts the user to enter an email, then it returns whether the email is spam or not spam.
 
 
 How to compile
 --------------
-	To compile this program, use command <cd pa1> (note: excluding the left/right arrows) to navigate to the directory where all the source files are stored. There is a Makefile in the PA1, so you can simply type "make" into the terminal, and press enter. To make an executable from a given c file, simple tpye "make <name_of_file>" and press enter. The makefile will generate an executable.
-
+	To compile this program, first go to the directory containing the spamFilter. Use command <cd pa1> (note: excluding the left/right arrows) to navigate to the directory containing the spamFilter. Then type make to compile all the files in the directory. The makefile creates an executable called spamfilter. If you want to compile individual files, enter make <name_of_file>. The makefile will create an executable with the name of the file.
 
 How to run
 ----------
@@ -42,30 +37,3 @@ Testing
 -------
 The testhash.c program tested whether the correct hashvalue was printed. Some tests include
 	- All letters, all numbers, combination of letters and numbers, spaces, empty string
-
-
-Questions
----------
-
-Vim Questions
--------------
-How would you find and replace all occurences of DEFUL_SIZE in your file to be DEFAULT_SIZE?
-First, enable Spell Check feature in Vim, by typing :set spell. In insert mode, Vim will highlight an mispelled words. Search for misspelled words, then type z= to get alist of suggestions. Hit the enter key and Vim will automatically correct the mistake. Continue this procedure to fix all misspelled words.
-
-Git Questions
--------------
-2. What Git command(s) would you use to list files with changes since the last commit?
-	git diff
-	git status or git status --short 
-	git log
-
-3. What git command would you use to undo a bad commit that has already been pushed?
-	git revert <commit hash>
-
-4. What Git command would you use to see the history of all your comments?
-	git log
-
-Academic Integrity Question
----------------------------
-5. What do you do to act with integrity?
-	Talk with my friend in psedocode and refer him to resources.
